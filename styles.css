@@ -1,0 +1,109 @@
+
+
+html{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: black;
+    letter-spacing: 1px;
+}
+
+body{
+    width: 80%;
+    background: black;
+    min-height: 100vh;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.player{
+    background: red;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+img{
+    width: 50%;
+}
+
+#controls{
+    border: 1px lightcoral solid;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+#controls p{
+    color: whitesmoke;
+}
+
+.controlsWrapper span{
+    cursor: pointer;
+    color: black;
+    font-size: 90px;
+}
+  
+
+#currentSong{
+    overflow: hidden;
+}
+
+#songList{
+    overflow: hidden;
+    text-align: left;
+}
+
+li{
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+
+li:hover{
+    background: #fa6555;
+}
+
+a{
+    
+    color: whitesmoke;
+}
+
+progress {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 5px;
+    
+} 
+
+
+
+
+
+
+/* ANIMACIÓN HEADPHONES */
+.pulse{
+    animation: pulse;
+    animation-duration: 0.4s;
+}
+
+@keyframes pulse{
+    from{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+@media(min-width: 800px){
+    body{
+        max-width: 60vw;
+        font-size: 25px;
+    }
+}
